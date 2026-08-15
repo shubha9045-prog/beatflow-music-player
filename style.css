@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    padding:0;
+    background:#121212;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+    padding-bottom:60px;   /* Footer के लिए Space */
+}
+
+.player{
+    width:350px;
+    background:#1e1e1e;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,255,255,0.3);
+}
+
+.player img{
+    width:220px;
+    height:220px;
+    border-radius:15px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.player h2{
+    margin-top:15px;
+}
+
+audio{
+    width:100%;
+    margin-top:15px;
+}
+
+h1{
+    color:#00ffd5;
+}
+
+/* Footer */
+
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#1b1b1b;
+    color:#fff;
+    text-align:center;
+    padding:12px 0;
+    font-size:15px;
+    border-top:2px solid cyan;
+}
+
+
+
+
+
+
+
+/* Layout */
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+/* Playlist */
+
+.playlist{
+    width:360px;
+    height:620px;
+    background:#181818;
+    border-radius:20px;
+    padding:20px;
+    color:white;
+    box-shadow:0 0 20px rgba(0,255,255,.25);
+    overflow-y:auto;
+}
+
+.playlist-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.song{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#222;
+    padding:10px;
+    margin-bottom:12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.song:hover{
+    background:#333;
+}
+
+.song img{
+    width:55px;
+    height:55px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.info{
+    flex:1;
+    margin-left:12px;
+}
+
+.info h4{
+    margin:0;
+    font-size:18px;
+}
+
+.info p{
+    margin:5px 0 0;
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+.song span{
+    font-size:16px;
+}
+
+.active{
+    background:linear-gradient(90deg,#4b5cff,#b03cff);
+}
