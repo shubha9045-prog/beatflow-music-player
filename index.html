@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <title>Beatflow - Music Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    
+
+
+
+<div class="header">
+    <img src="logo.png" alt="BeatFlow Logo" class="logo">
+    <h1>BeatFlow</h1>
+</div>
+
+
+
+    
 
 <!-- Playlist Start -->
 <div class="playlist">
 
     <div class="playlist-header">
         <h2>🎵 Playlist</h2>
-        <span>10 Songs</span>
+        <span>12 Songs</span>
     </div>
+
+<div class="search-box">
+    <input type="text" id="searchSong" placeholder="🔍 Search Song...">
+</div>
+<div class="no-results" id="noResults">No songs found</div>
 
     <div class="song active">
         <img src="cover1.jpg" alt="">
@@ -106,6 +124,24 @@
         <span>03:28</span>
     </div>
 
+    <div class="song">
+        <img src="cover11.jpg" alt="">
+        <div class="info">
+            <h4>sayiraa</h4>
+            <p>lokesh singh</p>
+        </div>
+        <span>06:09</span>
+    </div>
+
+    <div class="song">
+        <img src="cover12.jpg" alt="">
+        <div class="info">
+            <h4>dekhte dekhte </h4>
+            <p>nusrat feteh</p>
+        </div>
+        <span>04:13</span>
+    </div>
+
 </div>
 <!-- Playlist End -->
 
@@ -122,15 +158,42 @@
 
     <audio id="audio"></audio>
 
+
+
+<div class="progress-container">
+
+    <span id="currentTime">0:00</span>
+
+    <input type="range" id="progress" value="0" min="0" max="100">
+
+    <span id="duration">0:00</span>
+
+</div>
+
+
+
+
+<div class="volume-control">
+    🔊
+    <input type="range" id="volume" min="0" max="100" value="70">
+</div>
+
+
+
+
+
     <div class="controls">
-        <button id="prev">⏮</button>
+        <button id="shuffle" title="Shuffle">🔀</button>
+         <button id="prev">⏮</button>
         <button id="play">▶</button>
-        <button id="next">⏭</button>
+        <button id="next">⏭</button> 
+        <button id="repeat" title="Repeat">🔁</button>
+        
     </div>
 
 </div>
 <!-- Player End -->
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 <!-- Footer -->
 <footer class="footer">
